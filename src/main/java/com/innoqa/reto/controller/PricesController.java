@@ -22,9 +22,9 @@ public class PricesController {
 			@RequestParam(value = "fechaAplicacion", required = true) String fechaAplicacion,
 			@RequestParam(value = "idProducto", required = true) Long idProducto,
 			@RequestParam(value = "idCadena", required = true) Long idCadena) {
-		Optional<Prices> otc = iPricesServices.getPrice(fechaAplicacion, idProducto, idCadena);
-		if (otc.isPresent()) {
-			return ResponseEntity.ok(otc.get());
+		Optional<Prices> op = iPricesServices.getPrice(fechaAplicacion, idProducto, idCadena);
+		if (op.isPresent()) {
+			return ResponseEntity.ok(op.get());
 		}
 		return ResponseEntity.noContent().build();
 	}

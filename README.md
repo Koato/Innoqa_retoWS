@@ -1,4 +1,4 @@
-# ![Logo-template](images/logo.gif)
+# ![Logo-template](images/logo.png)
 # Recurso Java: Reto técnico
 
 >El objetivo de este documento es proveer información relacionada del Proyecto que ha sido implementado sobre Java, H2 y JPA.

@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "972f0cb9-1262-4b3c-9fc0-cbfa87d211cf",
+		"name": "Innoqa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Prueba 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-14 10:00:00&idProducto=35455&idCadena=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fechaAplicacion",
+							"value": "2020-06-14 10:00:00"
+						},
+						{
+							"key": "idProducto",
+							"value": "35455"
+						},
+						{
+							"key": "idCadena",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prueba 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-14 10:00:00&idProducto=35455&idCadena=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "fechaAplicacion",
+									"value": "2020-06-14 10:00:00"
+								},
+								{
+									"key": "idProducto",
+									"value": "35455"
+								},
+								{
+									"key": "idCadena",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 15:52:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandId\": {\n        \"id\": 1\n    },\n    \"startDate\": \"2020-06-14T00:00:00\",\n    \"endDate\": \"2020-12-31T23:59:59\",\n    \"priceList\": 1,\n    \"productId\": 35455,\n    \"price\": 35.5,\n    \"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Prueba 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-14 16:00:00&idProducto=35455&idCadena=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fechaAplicacion",
+							"value": "2020-06-14 16:00:00"
+						},
+						{
+							"key": "idProducto",
+							"value": "35455"
+						},
+						{
+							"key": "idCadena",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prueba 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-14 16:00:00&idProducto=35455&idCadena=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "fechaAplicacion",
+									"value": "2020-06-14 16:00:00"
+								},
+								{
+									"key": "idProducto",
+									"value": "35455"
+								},
+								{
+									"key": "idCadena",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 15:53:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandId\": {\n        \"id\": 1\n    },\n    \"startDate\": \"2020-06-14T15:00:00\",\n    \"endDate\": \"2020-06-14T18:30:00\",\n    \"priceList\": 2,\n    \"productId\": 35455,\n    \"price\": 25.45,\n    \"id\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Prueba 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-14 21:00:00&idProducto=35455&idCadena=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fechaAplicacion",
+							"value": "2020-06-14 21:00:00"
+						},
+						{
+							"key": "idProducto",
+							"value": "35455"
+						},
+						{
+							"key": "idCadena",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prueba 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-14 21:00:00&idProducto=35455&idCadena=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "fechaAplicacion",
+									"value": "2020-06-14 21:00:00"
+								},
+								{
+									"key": "idProducto",
+									"value": "35455"
+								},
+								{
+									"key": "idCadena",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 15:54:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandId\": {\n        \"id\": 1\n    },\n    \"startDate\": \"2020-06-14T00:00:00\",\n    \"endDate\": \"2020-12-31T23:59:59\",\n    \"priceList\": 1,\n    \"productId\": 35455,\n    \"price\": 35.5,\n    \"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Prueba 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-15 10:00:00&idProducto=35455&idCadena=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fechaAplicacion",
+							"value": "2020-06-15 10:00:00"
+						},
+						{
+							"key": "idProducto",
+							"value": "35455"
+						},
+						{
+							"key": "idCadena",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prueba 4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-15 10:00:00&idProducto=35455&idCadena=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "fechaAplicacion",
+									"value": "2020-06-15 10:00:00"
+								},
+								{
+									"key": "idProducto",
+									"value": "35455"
+								},
+								{
+									"key": "idCadena",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 15:54:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandId\": {\n        \"id\": 1\n    },\n    \"startDate\": \"2020-06-15T00:00:00\",\n    \"endDate\": \"2020-06-15T11:00:00\",\n    \"priceList\": 3,\n    \"productId\": 35455,\n    \"price\": 30.5,\n    \"id\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "Prueba 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-16 21:00:00&idProducto=35455&idCadena=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "fechaAplicacion",
+							"value": "2020-06-16 21:00:00"
+						},
+						{
+							"key": "idProducto",
+							"value": "35455"
+						},
+						{
+							"key": "idCadena",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prueba 5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/prices?fechaAplicacion=2020-06-16 21:00:00&idProducto=35455&idCadena=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"prices"
+							],
+							"query": [
+								{
+									"key": "fechaAplicacion",
+									"value": "2020-06-16 21:00:00"
+								},
+								{
+									"key": "idProducto",
+									"value": "35455"
+								},
+								{
+									"key": "idCadena",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Feb 2023 15:55:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"brandId\": {\n        \"id\": 1\n    },\n    \"startDate\": \"2020-06-15T16:00:00\",\n    \"endDate\": \"2020-12-31T23:59:59\",\n    \"priceList\": 4,\n    \"productId\": 35455,\n    \"price\": 38.95,\n    \"id\": 4\n}"
+				}
+			]
+		}
+	]
+}

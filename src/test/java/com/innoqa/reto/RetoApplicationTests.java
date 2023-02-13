@@ -17,8 +17,8 @@ class RetoApplicationTests {
 	@Autowired
 	private IPricesServices iPricesServices;
 
-	private Long idProducto = 35455L;
-	private Long idCadena = 1L;
+	private static final Long idProducto = 35455L;
+	private static final Long idCadena = 1L;
 
 	@Test
 	void Test1() {
@@ -26,28 +26,28 @@ class RetoApplicationTests {
 		Optional<Prices> op = iPricesServices.getPrice(fechaAplicacion, idProducto, idCadena);
 		assertEquals(1L, op.get().getId());
 	}
-	
+
 	@Test
 	void Test2() {
 		String fechaAplicacion = "2020-06-14 16:00:00";
 		Optional<Prices> op = iPricesServices.getPrice(fechaAplicacion, idProducto, idCadena);
 		assertEquals(2L, op.get().getId());
 	}
-	
+
 	@Test
 	void Test3() {
 		String fechaAplicacion = "2020-06-14 21:00:00";
 		Optional<Prices> op = iPricesServices.getPrice(fechaAplicacion, idProducto, idCadena);
 		assertEquals(1L, op.get().getId());
 	}
-	
+
 	@Test
 	void Test4() {
 		String fechaAplicacion = "2020-06-15 10:00:00";
 		Optional<Prices> op = iPricesServices.getPrice(fechaAplicacion, idProducto, idCadena);
 		assertEquals(3L, op.get().getId());
 	}
-	
+
 	@Test
 	void Test5() {
 		String fechaAplicacion = "2020-06-16 21:00:00";

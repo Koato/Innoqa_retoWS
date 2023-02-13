@@ -2,6 +2,7 @@ package com.innoqa.reto.services.impl;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
@@ -29,13 +30,7 @@ public class PricesImpl implements IPricesServices {
 				.filter(x -> dateTime.isAfter(x.getStartDate()) && dateTime.isBefore(x.getEndDate()))
 				.collect(Collectors.toList());
 		if (prices.stream().count() > 1) {
-			int mayor = 0;
-			for (int i = 0; i < prices.size(); i++) {
-				if (prices.get(i).getPriority() > mayor) {
-					mayor = prices.get(i).getPriority();
-				}
-			}
-			return Optional.of(prices.get(mayor));
+			return prices.stream().max(Comparator.comparingInt(x -> x.getPriority()));
 		} else {
 			return prices.stream().findFirst();
 		}
